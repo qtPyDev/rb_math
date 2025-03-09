@@ -3,6 +3,10 @@
 
 
 def pythagoras(a=0, b=0, c=0)
+    a_sq = a*a
+    b_sq = b*b
+    c_sq = c*c 
+
     puts "this is our triangle:"
     puts "a = #{a}"
     puts "b = #{b}"
@@ -13,26 +17,26 @@ def pythagoras(a=0, b=0, c=0)
         puts "based on this we must find a"
         puts "a^ = b^ + c^"
         puts "a^ = #{b}^ + #{c}^"
-        puts "a^ = #{b*b} + #{c*c}"
-        puts "a^ = #{(b*b) + (c*c)}" 
-        puts "a = #{Math.sqrt((b*b) + (c*c)).round(2)}"  
+        puts "a^ = #{b_sq} + #{c_sq}"
+        puts "a^ = #{(b_sq) + (c_sq)}" 
+        puts "a = #{Math.sqrt((b_sq) + (c_sq)).round(2)}"  
     end
     if b == 0
         puts "based on this we must find a"
         puts "a^ + b^ = c^"
         puts "#{a}^ + b^ = #{c}^"
-        puts "#{a*a} + b^ = #{c*c}"
-        puts "b^ = #{c*c} - #{(a*a)}"
-        puts "b^ = #{(c*c) - (a*a)}" 
-        puts "b = #{Math.sqrt((c*c) - (a*a)).round(2)}"  
+        puts "#{a_sq} + b^ = #{c_sq}"
+        puts "b^ = #{c_sq} - #{(a_sq)}"
+        puts "b^ = #{(c_sq) - (a_sq)}" 
+        puts "b = #{Math.sqrt((c_sq) - (a_sq)).round(2)}"  
     end
     if c == 0
         puts "based on this we must find a"
         puts "a^ + b^ = c^"
         puts "#{a}^ + #{b}^ = c^"
-        puts "#{a*a} + #{b*b} = c^"
-        puts "c^ = #{(a*a) + (b*b)}" 
-        puts "c = #{Math.sqrt((a*a) + (b*b)).round(2)}"  
+        puts "#{a_sq} + #{b_sq} = c^"
+        puts "c^ = #{(a_sq) + (b_sq)}" 
+        puts "c = #{Math.sqrt((a_sq) + (b_sq)).round(2)}"  
     end
 end
 
